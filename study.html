@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<!-- headerここから -->
+
+<head>
+	<meta charset="UTF-8">
+	<title>STUDY | App Portfolio</title>
+	<meta name="description" content="カフェ「KISSA」は日本の喫茶文化をコーヒーに落とし込み，訪れるお客様に特別なひとときを提供します．">
+	<meta name="viewpoint" content="width=device-width">
+	<script src="./js/toggle-menu.js"></script>
+	<link href="./css/common.css" rel="stylesheet">
+  <link href="./css/study.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+</head>
+<!-- headerここまで -->
+
+<!-- bodyここから -->
+
+<body>
+	<header class="header">
+		<div class="header-inner">
+			<a class="header-logo" href="./index.html">
+				<img src="./images/common/logo-header.png" alt="KISSA">
+			</a>
+			<button class="toggle-menu-button"></button>
+			<div class="header-site-menu">
+				<nav class="site-menu">
+					<ul>
+						<li><a href="./study.html">STUDY</a></li>
+						<li><a href="./works.html">WORKS</a></li>
+						<li><a href="./contact.html">CONTACT</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+
+	<!-- mainここから -->
+	<main class="main">
+    <div class="title">
+      <h1>STUDY</h1>
+      <p>研究について</p>
+    </div>
+    <div class="feature">
+      <div class="feature-text">
+        <h2>「触感」を作り出す</h2>
+        <p>現在，映像メディアの発達による視覚情報や聴覚情報の伝達が可能です．その一方で，触感情報の伝達は未だに実現しているとはいえず，開拓中の分野であるといえます．そこでモバイル端末上で素材に対する細かいテクスチャ触感を再現できれば空間的制約・時間的制約を越えて触感を伝達することができると考えました．触感生成アプリの開発では，Swiftを用いて二次元テクスチャデータから振動を生成することができました．</p>
+      </div>
+      <img src="./images/concept/device.png" alt="アプリ画面">
+    </div>
+    <div class="feature reverse">
+      <div class="feature-text">
+        <h2>振動生成アルゴリズムの実装</h2>
+        <p>モバイル端末上に表示されている画像上をタッチすることにより，タッチ座標の位置に応じた画像のグレースケール値の変化量を取得して振動に割り当てました．さらに，指の接触範囲を考慮できるように指の力から推定する方法を考え，実装を行いました．これにより，周囲のピクセルのグレースケール値も含めた振動生成が可能となりました．</p>
+      </div>
+      <video width="320" height="240" controls>
+				<source src="./images/concept/movie1.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			</video>
+    </div>
+		<div class="feature">
+      <div class="feature-text">
+        <h2>実験・今後の展望</h2>
+        <p>開発後の検証実験では，触感形容詞5対と7段階SD法を用いた官能評価実験を行いました．選定した触感サンプル15種に対して，本物のサンプルと触感デバイス(周囲考慮あり/周囲考慮なし/振動なし)4条件の計60タスクを実施しました．その結果，硬質ウレタンで製作された実サンプルと触感デバイス(周囲考慮あり)の絶対平均誤差と差の検定を実施することで，ざらざら感・凹凸感の特徴を持つサンプルに対しての再現の可能性を示しました．今後は，素材を変えた別のテクスチャパターンに対しての触感再現及び再現精度の向上を目指しております．</p>
+      </div>
+			<img src="./images/concept/アイコン用.png" alt="アイコン画像">
+    </div>
+		<div class="feature reverse">
+      <div class="feature-text">
+        <h2>賞歴</h2>
+        <p>The 7th Workshop of Robotics Ongoing Breakthroughs <br>優秀プレゼンテーション賞</p>
+      </div>
+      <img src="./images/concept/image.png" alt="研究概要">
+    </div>
+  </main>
+	<!-- mainここまで -->
+
+	<!-- footerここから -->
+	<footer class="footer">
+		<nav class="site-menu">
+			<ul>
+				<li><a href="./study.html">STUDY</a></li>
+				<li><a href="./works.html">WORKS</a></li>
+				<li><a href="./contact.html">CONTACT</a></li>
+			</ul>
+		</nav>
+		<a class="footer-logo" href="./index.html">
+			<img src="./images/common/logo-footer.png" alt="KISSA">
+		</a>
+		<p class="footer-tel">TEL01-2345-6789</p>
+		<p class="footer-time">広島大学　先進理工学研究科</p>
+		<p class="copyright"><small>&copy;Y.M.</small></p>
+	</footer>
+	<!-- footerここまで -->
+
+</body>
+<!-- bodyここまで -->
+
+</html>
