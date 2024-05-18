@@ -123,6 +123,20 @@
   font-weight: bold;
   margin-top:  15px;
 }
+.TextTyping span {
+  display: none;
+}
+
+/*文字列後ろの線の設定*/
+.TextTyping::after {
+  content: "|";
+  animation: typinganime .8s ease infinite;
+}
+
+@keyframes typinganime{
+  from{opacity:0}
+  to{opacity:1}
+}
 
 
 @media (max-width: 800px) {
@@ -164,5 +178,19 @@
   .item-list li {
     width: 220px;
     margin-left: 30px;
+  }
+  .TextTyping span {
+    display: none;
+  }
+  
+  /*文字列後ろの線の設定*/
+  .TextTyping::after {
+    content: "|";
+    animation: typinganime .8s ease infinite;
+  }
+  
+  @keyframes typinganime{
+    from{opacity:0}
+    to{opacity:1}
   }
 }
